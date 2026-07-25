@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SecuriFeed | PhishDetect</title>
+
+
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="analyzer.css">
+<link rel="stylesheet" href="news.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+🛡️ SecuriFeed
+<br>
+<small>by Farah Zahid</small>
+</div>
+
+
+<ul>
+
+<li>
+<a href="#analyzer">URL Analyzer</a>
+</li>
+
+<li>
+<a href="#news">Threat Feed</a>
+</li>
+
+<li>
+<a href="#game">PhishGame</a>
+</li>
+
+<li>
+<a href="#learning">Learning Doc</a>
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+
+
+<section class="hero">
+
+<h1>
+SecuriFeed
+</h1>
+
+
+<h2>
+PhishDetect
+</h2>
+
+
+<p>
+Detect phishing websites using URL analysis,
+regex detection and risk scoring.
+</p>
+
+
+</section>
+
+
+
+
+
+
+<!-- URL ANALYZER -->
+
+<section id="analyzer" class="analyzer">
+
+
+<h2>
+URL Analyzer
+</h2>
+
+
+<div class="input-box">
+
+
+<input 
+type="text"
+id="urlInput"
+placeholder="Enter suspicious URL">
+
+
+<button id="analyzeBtn">
+Analyze
+</button>
+
+
+</div>
+
+
+
+
+
+
+<div class="result-card">
+
+
+<h2>
+Analysis Result
+</h2>
+
+
+
+
+
+<!-- Risk Score -->
+
+
+<div class="detail-box">
+
+
+<h3>
+Risk Score
+</h3>
+
+
+<div id="riskCircle">
+0
+</div>
+
+
+<h2 id="riskLevel">
+Waiting...
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- SSL -->
+
+
+<div class="detail-box">
+
+
+<h3>
+SSL / Protocol
+</h3>
+
+
+<h2 id="sslStatus">
+⚠ HTTP — No Encryption
+</h2>
+
+
+<p id="sslMessage">
+No encryption. Any data entered on this page is transmitted in plain text.
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Domain Parsed -->
+
+
+<div class="detail-box">
+
+
+<h3>
+Domain Parsed
+</h3>
+
+
+
+<div class="domain-row">
+
+<span>
+Protocol
+</span>
+
+<b id="protocol">
+-
+</b>
+
+</div>
+
+
+
+
+<div class="domain-row">
+
+<span>
+Subdomain
+</span>
+
+<b id="subdomain">
+—
+</b>
+
+</div>
+
+
+
+
+
+<div class="domain-row">
+
+<span>
+Domain
+</span>
+
+<b id="domain">
+-
+</b>
+
+</div>
+
+
+
+
+
+<div class="domain-row">
+
+<span>
+Path
+</span>
+
+<b id="path">
+/
+</b>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div id="checks">
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- THREAT FEED -->
+
+
+<section id="news" class="news-section">
+
+
+<h2>
+Threat Feed
+</h2>
+
+
+<div id="newsContainer">
+
+</div>
+
+
+</section>
+
+
+<!-- PHISH GAME -->
+
+
+<section id="game" class="quiz">
+
+
+<h2>
+PhishGame
+</h2>
+
+
+
+<div class="quiz-card">
+
+
+<p id="question">
+Loading Question...
+</p>
+
+
+
+<div id="options">
+
+</div>
+
+
+
+<button id="nextBtn">
+Next Question
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+<!-- LEARNING DOC -->
+
+
+<section id="learning">
+
+
+<h2>
+Learning Doc
+</h2>
+
+
+
+<div class="detail-box">
+
+
+<h3>
+Phishing Detection Guide
+</h3>
+
+
+<p>
+Phishing is a cyber attack where attackers create fake websites,
+emails, or messages to steal sensitive information.
+</p>
+
+
+
+<ul>
+
+
+<li>
+Check website URL carefully before login.
+</li>
+
+
+<li>
+Always verify HTTPS security.
+</li>
+
+
+<li>
+Avoid clicking unknown email links.
+</li>
+
+
+<li>
+Look for spelling mistakes in domains.
+</li>
+
+
+<li>
+Never share passwords or OTP codes.
+</li>
+
+
+<li>
+Be careful with urgent verification requests.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+<footer>
+
+
+<p>
+© 2026 SecuriFeed | PhishDetect
+</p>
+
+
+<p>
+Developed by Farah Zahid
+</p>
+
+<p>
+Cyber Security Project | Phishing Detection System
+</p>
+</footer>
+
+<script src="analyzer.js"></script>
+
+<script src="news-feed.js"></script>
+
+<script src="game.js"></script>
+
+<script src="app.js"></script>
+
+
+
+</body>
+
+</html>

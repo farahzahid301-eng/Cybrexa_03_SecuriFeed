@@ -1,0 +1,38 @@
+.news-card{
+    background:#161b22;
+    padding:20px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.news-card:hover{
+    transform:translateY(-5px);
+}
+
+.news-card h3{
+    color:#00d4ff;
+    margin-bottom:10px;
+}
+
+.news-card p{
+    color:#cbd5e1;
+    margin-bottom:15px;
+}
+
+.news-card span{
+    font-size:14px;
+    color:#888;
+}
+
+.option{
+    display:block;
+    width:100%;
+    margin:10px 0;
+    background:#21262d;
+    color:white;
+}
+
+.option:hover{
+    background:#00d4ff;
+    color:black;
+}

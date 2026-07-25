@@ -1,0 +1,141 @@
+.analyzer{
+    max-width:1000px;
+    margin:auto;
+}
+
+.input-box{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.input-box input{
+    width:70%;
+    min-width:280px;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+    background:#21262d;
+    color:#fff;
+}
+
+.safe{
+    color:#00ff88;
+}
+
+.medium{
+    color:#ffc107;
+}
+
+.danger{
+    color:#ff4d4d;
+}
+
+.greenBorder{
+    border-color:#00ff88!important;
+}
+
+.yellowBorder{
+    border-color:#ffc107!important;
+}
+
+.redBorder{
+    border-color:#ff4d4d!important;
+}
+/* =========================
+   RISK SCORE CIRCLE
+========================= */
+
+#riskCircle{
+
+    width:160px;
+    height:160px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:20px auto;
+
+    font-size:45px;
+    font-weight:700;
+
+    background:#161b22;
+
+    border:12px solid #444;
+
+    transition:0.4s ease;
+
+}
+
+
+
+#riskCircle {
+
+    width: 160px;
+    height: 160px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px auto;
+
+    font-size: 45px;
+    font-weight: bold;
+
+    background: #161b22;
+
+    border: 10px solid #555;
+
+    color: white;
+
+    transition: 0.3s ease;
+
+}
+
+
+/* GREEN */
+
+.greenBorder {
+
+    border: 10px solid #00ff88 !important;
+
+    background: rgba(0,255,136,0.15);
+
+    box-shadow: 0 0 25px #00ff88;
+
+}
+
+
+/* YELLOW */
+
+.yellowBorder {
+
+    border: 10px solid #ffc107 !important;
+
+    background: rgba(255,193,7,0.15);
+
+    box-shadow: 0 0 25px #ffc107;
+
+}
+
+
+/* RED */
+
+.redBorder {
+
+    border: 10px solid #ff4d4d !important;
+
+    background: rgba(255,77,77,0.15);
+
+    box-shadow: 0 0 25px #ff4d4d;
+
+}
